@@ -7,3 +7,6 @@ first_quote=soup.find("span",class_="text").text
 print("___DATA EXTRACTION___")
 print(first_quote)
 print("____________________________")
+all_quotes=soup.find_all("span",class_="text")
+for q in all_quotes:
+    print("Found Quote: " + q.text)
